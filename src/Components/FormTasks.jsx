@@ -7,7 +7,8 @@ import {
     Input,
     FormGroup,
     Label,
-    Form
+    Form,
+    Button
 } from 'reactstrap';
 import '../index.css';
 
@@ -17,6 +18,7 @@ export default class FormTasks extends Component {
         return (
             <div>
                 <Form className="form-task">
+                    <h4>Nueva Tarea</h4>
                     <FormGroup>
                         <Input type="email" name="email" id="titulo" placeholder="Título" />
                     </FormGroup>
@@ -38,7 +40,7 @@ export default class FormTasks extends Component {
                             placeholder="date placeholder"
                         />
                     </FormGroup>
-
+                    <Button color="primary"> Agregar </Button>
                 </Form>
             </div>
         );

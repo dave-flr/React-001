@@ -21,17 +21,17 @@ class Task extends Component {
         return (
 
             <div>
-                <Card>
+                <Card className="task">
                     <CardHeader> 
                         <CardTitle> { this.props.tema } </CardTitle>
-                        <p> { this.props.prioridad } </p>
+                        {this.props.badge}
                     </CardHeader>
                     <CardBody>
                         <CardText> { this.props.fecha } </CardText>
                         <CardText> { this.props.texto } </CardText>
                     </CardBody>
                     <CardFooter>
-                        <Button outline color="danger"> Eliminar </Button>
+                        <Button color="danger"> Eliminar </Button>
                     </CardFooter>
                 </Card>
             </div>
